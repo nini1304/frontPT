@@ -73,8 +73,13 @@ body{
   justify-content: space-between;
   padding: 42px 546px;
 }
-.selected-option {
-  background-color: var(--color-primary);
+.card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
 }
 
 @media (max-width: 1200px) {

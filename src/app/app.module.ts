@@ -9,6 +9,8 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import { StartComponent } from './components/start/start.component';
 import {MatChipsModule} from "@angular/material/chips";
+import {MatCardModule} from "@angular/material/card";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -17,13 +19,16 @@ import {MatChipsModule} from "@angular/material/chips";
 
   ],
     imports: [
+
+        HttpClientModule,
         BrowserAnimationsModule,
         BrowserModule,
         AppRoutingModule,
         MatButtonModule,
         MatIconModule,
         MatMenuModule,
-        MatChipsModule
+        MatChipsModule,
+        MatCardModule
     ],
   providers: [],
   bootstrap: [AppComponent]
