@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, SimpleChanges} from '@angular/core';
 import {StatusService} from "../../service/status.service";
 import {ProfilesDto} from "../../dto/profiles.dto";
 
@@ -17,9 +17,8 @@ export class StartComponent {
 
   constructor(private service:StatusService) { }
   ngOnInit() {
-    this.loadData();
 
-
+   this.loadData();
 
   }
   loadData(){
@@ -38,7 +37,8 @@ export class StartComponent {
       this.isDisabled.fill(false);
       this.selectedOption = null;
       this.selectedStyle = { 'background-color': 'var(--lila-b)' };
-      this.loadData();
+      location.reload();
+
     } else {
       this.isDisabled.fill(true);
       this.isDisabled[index] = false;

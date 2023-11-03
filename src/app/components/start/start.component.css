@@ -1,6 +1,4 @@
-body{
 
-}
 .image{
   display: flex;
   flex-direction: column;
@@ -49,6 +47,13 @@ body{
 
 
 }
+.info-title{
+  font-family: var(--lato);
+  font-style: normal;
+  line-height: normal;
+  color: var(--color-primary);
+
+}
 .text{
   font-family: var(--lato);
   font-style: normal;
@@ -67,6 +72,7 @@ body{
   margin-bottom: 6px;
   margin-left: 280px;
 }
+
 .filtlers{
   display:flex;
   align-items: center;
@@ -76,7 +82,6 @@ body{
 
 
 .example-header-image {
-
   background-size: cover;
 }
 .card-title{
@@ -94,7 +99,7 @@ body{
   text-align: center;
 }
 .cards mat-card:hover {
-  box-shadow: 0px 0px 10px 0px #8660E2;
+  box-shadow: 0px 0px 10px 0px var(--color-secondary);
   transition: box-shadow 0.3s;
 }
 .cards{
@@ -103,8 +108,28 @@ body{
 .carrusel{
   padding: 0px 80px;
 }
+.profile-button{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 42px 126px;
 
+}
+.footer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--silver);
 
+}
+.footer-text{
+  margin-right: 60px;
+
+}
+.footer-image{
+  width: 600px;
+  height: 300px;
+}
 @media (max-width: 1200px) {
   .info{
     display: flex;
@@ -127,6 +152,25 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 30px 126px;
+  }
+  .footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--silver);
+
+  }
+  .footer-image{
+    margin-top: 20px;
+    width: 300px;
+    height: 150px;
+  }
+  .footer-text{
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+
   }
 
 

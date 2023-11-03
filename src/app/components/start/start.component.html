@@ -8,12 +8,12 @@
     <div class="content">
     <img class="image1" src="./assets/Group.png" >
     <div class="combo-text">
-      <h1 class="text">Perfiles Profesionales</h1>
+      <h1 class="info-title">Perfiles Profesionales</h1>
       <p class="text">Encuentra a los mejores profesionales del derecho que te brindarán asesoramiento</p>
     </div>
     </div>
       <div class="boton">
-        <button style="background-color: var(--color-primary); color: white;font-family: var(--lato); width: 160px;" mat-raised-button color="primary">Más información</button>
+        <button style="background-color: var(--color-primary); color: white;font-family: var(--lato);font-style: normal;line-height: normal; width: 160px;"  mat-raised-button color="primary">Más información</button>
       </div>
     </div>
 
@@ -21,19 +21,18 @@
     <div class="content">
     <img class="image1" src="./assets/book.png" >
     <div class="combo-text">
-      <h1 class="text">Revista Jurídica</h1>
+      <h1 class="info-title">Revista Jurídica</h1>
       <p class="text">Infórmate y comparte conocimiento legal con la sociedad</p>
-      <p></p>
 
     </div>
   </div>
     <div class="boton">
-      <button style="background-color: var(--color-primary); color: white; width: 160px;" mat-raised-button color="primary">Más información</button>
+      <button style="background-color: var(--color-primary); color: white;font-family: var(--lato); font-style: normal;line-height: normal; width: 160px;" mat-raised-button color="primary">Más información</button>
     </div>
   </div>
 </div>
 <div class="filtlers">
-  <mat-chip-option (click)="toggleDisabled(0)" [disabled]="isDisabled[0]" [style]="selectedOption === 0 ? selectedStyle : null"  >Todos</mat-chip-option>
+  <mat-chip-option (click)="toggleDisabled(0)" [disabled]="isDisabled[0]" [style]="selectedOption === 0 ? selectedStyle : null">Todos</mat-chip-option>
   <mat-chip-option (click)="toggleDisabled(1)" [disabled]="isDisabled[1]" [style]="selectedOption === 1 ? selectedStyle : null"  >Bolivia</mat-chip-option>
   <mat-chip-option (click)="toggleDisabled(2)" [disabled]="isDisabled[2]"  [style]="selectedOption === 2 ? selectedStyle : null"  >Argentina</mat-chip-option>
 </div>
@@ -53,7 +52,7 @@
           </p>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button style="color:  var(--color-primary); margin-left: 200px">Ver Perfil</button>
+          <button mat-button style="color:  var(--color-primary); font-family: var(--lato); font-style: normal; line-height: normal; margin-left: 200px">Ver Perfil</button>
         </mat-card-actions>
       </mat-card>
       <!-- Agrega más tarjetas según sea necesario -->
@@ -63,10 +62,24 @@
 
 </swiper-container>
 </div>
-<br>
+<div class="profile-button">
+  <button style="background-color: var(--color-primary);color: white; font-family: var(--lato);font-style: normal;line-height: normal;" mat-raised-button>Ver más perfiles</button>
+</div>
+<footer>
+  <div class="footer">
+    <div><img class="footer-image" src="./assets/hand-remove.png" ></div>
+    <div class="footer-text">
+      <h1 class="text">¿Qué es la Status Card?</h1>
+      <p>Es una tarjeta que lleva a tu perfil profesional y te conecta con un mundo de ventajas:</p>
+      <ul>
+        <li class="text">Encuentra clientes, pasantías y oportunidades laborales desde tu perfil.</li>
+        <li class="text">Publica artículos en la Revista Jurídica y recibe tu boletín legal.</li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
-<br>
-<br>
+
 
 
 </body>
