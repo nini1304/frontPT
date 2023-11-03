@@ -37,8 +37,8 @@
   <mat-chip-option (click)="toggleDisabled(2)" [disabled]="isDisabled[2]"  [style]="selectedOption === 2 ? selectedStyle : null"  >Argentina</mat-chip-option>
 </div>
 <div class="carrusel">
-<swiper-container slides-per-view="4"  navigation="true">
-  <swiper-slide *ngFor="let profiles of profilesDto" >
+<swiper-container slides-per-view="4"  navigation="true"  autoplay-delay="2500" autoplay-disable-on-interaction="false" rewind="true">
+  <swiper-slide  *ngFor="let profiles of profilesDto">
     <br>
     <div class="cards">
       <mat-card >

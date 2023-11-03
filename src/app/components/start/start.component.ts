@@ -26,6 +26,7 @@ export class StartComponent {
       next: (data) => {
         console.log(data);
         this.profilesDto = data;
+        this.help = data;
 
       },
     });
@@ -33,23 +34,27 @@ export class StartComponent {
   }
 
   toggleDisabled(index: number) {
+    console.log(index);
+    console.log(this.selectedOption);
     if (this.selectedOption === index) {
       this.isDisabled.fill(false);
       this.selectedOption = null;
-      this.selectedStyle = { 'background-color': 'var(--lila-b)' };
       location.reload();
+      console.log(this.profilesDto);
 
     } else {
       this.isDisabled.fill(true);
       this.isDisabled[index] = false;
       this.selectedOption = index;
       this.selectedStyle = { 'background-color': 'var(--color-primary)' };
-      if(index === 1){
+     if(index === 1){
         const country = 'Bolivia';
         this.profilesDto = this.profilesDto.filter(profile => profile.country === country);
+        console.log(this.profilesDto);
       }else if(index === 2){
         const country = 'Argentina';
         this.profilesDto = this.profilesDto.filter(profile => profile.country === country);
+        console.log(this.profilesDto);
       }
     }
   }
