@@ -8,6 +8,7 @@ import {MatMenuModule} from "@angular/material/menu";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import { StartComponent } from './components/start/start.component';
+import {MatChipsModule} from "@angular/material/chips";
 
 @NgModule({
   declarations: [
@@ -15,14 +16,15 @@ import { StartComponent } from './components/start/start.component';
     StartComponent
 
   ],
-  imports: [
-    BrowserAnimationsModule,
-    BrowserModule,
-    AppRoutingModule,
-    MatButtonModule,
-    MatIconModule,
-    MatMenuModule
-  ],
+    imports: [
+        BrowserAnimationsModule,
+        BrowserModule,
+        AppRoutingModule,
+        MatButtonModule,
+        MatIconModule,
+        MatMenuModule,
+        MatChipsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

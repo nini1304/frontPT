@@ -44,9 +44,15 @@ body{
   display: flex;
 
 }
-.text{
+.combo-text{
   margin-left: 12px;
 
+
+}
+.text{
+  font-family: var(--lato);
+  font-style: normal;
+  line-height: normal;
 }
 .info1{
   width: 440px;
@@ -61,6 +67,16 @@ body{
   margin-bottom: 6px;
   margin-left: 280px;
 }
+.filtlers{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 42px 546px;
+}
+.selected-option {
+  background-color: var(--color-primary);
+}
+
 @media (max-width: 1200px) {
   .info{
     display: flex;
@@ -78,5 +94,12 @@ body{
     padding: 10px 20px;
 
   }
+  .filtlers{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 126px;
+  }
+
 
 }
